@@ -14,9 +14,12 @@ body {
 
 #wave {
     position: relative;
-    width: 100%;
+    width: 110%;
     padding: 0;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3px;
+    margin-bottom: 0;
     border: 0;
 }
 button {
@@ -106,6 +109,7 @@ button {
     max-width: 100%;
     margin-left: 5% auto;
     margin-bottom: 3%;
+    margin-top: 0%;
 }
 
 
@@ -118,6 +122,8 @@ button {
     display: flex;
     text-align: center;
     color: #9E290B;
+    margin-top: 5%;
+    margin-bottom: 0%;
 }
 
 #setup h1{
@@ -127,13 +133,13 @@ button {
     display: flex;
     text-align: center;
     color: black;
+    margin-top: 0%;
 }
 
 
 #setup #three-steps {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     max-width: 55%;
     margin-left: 5%;
     margin-right: 5%;
@@ -146,6 +152,8 @@ button {
 #setup #three-steps .step-container{
     margin-left: 8%;
     margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
     display: flex;
     flex-direction: column;
     justify-content: center;
