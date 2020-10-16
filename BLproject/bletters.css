@@ -13,6 +13,7 @@ body{
     background: #f0f7f4 no-repeat center center fixed;
 }
 
+/* styling for home page */
 #wave {
     position: relative;
     width: 100%;
@@ -177,48 +178,78 @@ button {
 }
 
 /* styling for sign up page */
-#sign-up {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
     
 
-#sign-up h1{
+#sign-up-page h1{
     padding-top: 3em;
     font-weight: bold;
     font-size: 2.5em;
+    text-align: center;
 }
 
-#back-and-next{
+
+#sign-up-page #email {
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1.32364px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+
+.container {
+    margin-top: 5%;
     display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
     justify-content: center;
+}
+
+.container .align {
+    display: flex;
+    flex-direction: column;
+}
+
+#back-next{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
-    max-width: 100%;
-    padding-left: .5em;
+    
 }
 
-#back-and-next .start{
-    padding:  0;
+#back-next .start{
+    color: white;
+    background-color: black;
+    line-height: 17px;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    /* padding:  0;
     margin: 1em;
     height: 2rem;
     width: 6.5rem;
-    font-size: 14px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold; */
 }
 
-input {
-    max-width: 250px;
-    width: 20%;
-    padding: 8px;
-    font-size: 20px;
-    display: inline-block;
-}
+
 
 /* Center blog options */
-#select-blogs-page #menu-bar{
-    padding-bottom: 200px;
+#select-blogs-page .container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 14%;
 }
 
 #select-blogs{
@@ -240,20 +271,27 @@ input {
 }
 
 /* Frequency Page Styling*/
+
+#freq .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 12%;
+}
+
+
 #select-frequency{
     display: flex;
     flex-direction: column;
-    padding-right: 300px;
-    justify-content: center;
-    align-items: center;
 }
 
 #select-frequency h2{
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
 }
 .slidecontainer {
-    width: 25%; /* Width of the outside container */
+    width: 100%; /* Width of the outside container */
   }
 .slider {
     -webkit-appearance: none;

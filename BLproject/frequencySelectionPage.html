@@ -3,24 +3,34 @@
     <head> 
         <title> Frequency Selection Page</title>
         <link rel="stylesheet" href="bletters.css">
+        <link rel="icon" href="images/bLettersIcon.png">
     </head>
-    <body> 
+    <body id = 'freq'> 
         <div id = 'menu-bar'> 
             <button class = 'BLetters'> BLetters </button>
         </div>
-        <div id = 'select-frequency'>
-            <h2> Select Frequency</h2>
-            <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <div class = 'container'>
+            <div class = 'align'>
+                <div id = 'select-frequency'>
+                    <h2> Select Frequency</h2>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <div id = 'select-buttons'>
+                        <button> 1/month </button>
+                        <button> 1/week </button>
+                        <button> 1/day </button>
+                    </div>
+                    <div id = 'back-next'>
+                        <button class = 'start' > Next </button> 
+                        <button class = 'start' > Back </button> 
+                    </div>
+                </div>
             </div>
-            <div id = 'select-buttons'>
-                <button> 1/month </button>
-                <button> 1/week </button>
-                <button> 1/day </button>
-            </div>
-            <div id = 'back-and-next'>
-                <button class = 'start' > Next </button> 
-                <button class = 'start' > Back </button> 
+            <div class = 'align'>
+                <h1> Genre One </h1>
+                <h1> Genre Two </h1>
+                <h1> Genre Two </h1>
             </div>
         </div>
     </body>
