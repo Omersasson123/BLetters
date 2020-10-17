@@ -15,10 +15,13 @@ body{
 
 /* styling for home page */
 #wave {
+    display: flex;
+    justify-content: stretch;
     position: relative;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin-left: 0%;
+    margin-right: 0%;
     border: 0;
 }
 button {
@@ -33,8 +36,11 @@ button {
     background-color: Transparent;
     border-radius: 0.25rem;
     border: none;
+    outline: none;
     cursor: pointer;
 }
+
+
 
 .start{
     color: white;
@@ -326,5 +332,11 @@ button {
   #select-buttons button{
       border-radius: 25%;
       background: #eae3dd; 
+  }
+
+  #days{
+      margin-right: 0%;
+      margin-left: -15%;
+      margin-bottom: 5%
   }
 

@@ -7,7 +7,9 @@
     </head>
     <body id = 'freq'> 
         <div id = 'menu-bar'> 
-            <button class = 'BLetters'> BLetters </button>
+            <a href='homePage.html'>
+                <button class = "BLetters"> BLetters </button>
+            </a>
         </div>
         <div class = 'container'>
             <div class = 'align'>
@@ -17,21 +19,27 @@
                         <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                     </div>
                     <div id = 'select-buttons'>
-                        <button> 1/month </button>
-                        <button> 1/week </button>
-                        <button> 1/day </button>
+                        <button id='day'> 1/day </button>
+                        <button id='week'> 1/week </button>
+                        <button id='month'> 1/month </button>
                     </div>
                     <div id = 'back-next'>
-                        <button class = 'start' > Next </button> 
-                        <button class = 'start' > Back </button> 
+                        <a href='signedUp.html'>
+                            <button class = 'start' > Next </button> 
+                        </a>
+                        <a href='selectBlogsPage.html'>
+                            <button class = 'start' > Back </button> 
+                        </a>
                     </div>
                 </div>
             </div>
+            <h3 id = 'days'>Every 50 Days</h3>
             <div class = 'align'>
                 <h1> Genre One </h1>
                 <h1> Genre Two </h1>
                 <h1> Genre Two </h1>
             </div>
         </div>
+        <script src='freqSel.js'></script>
     </body>
 </html>
