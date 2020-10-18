@@ -340,3 +340,22 @@ button {
       margin-bottom: 5%
   }
 
+  /* Styling for signedUp Page */
+  .container #signedUpConfirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .container #signedUpConfirm h1{
+    font-weight: bold;
+    font-size: 60px;
+  }
+  
+  .container #signedUpConfirm h3{
+    font-weight: bold;
+    font-size: 36px;
+  }
+
