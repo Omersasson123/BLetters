@@ -346,16 +346,18 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 200px;
   }
 
   .container #signedUpConfirm h1{
     font-weight: bold;
-    font-size: 60px;
+    font-size: 64px;
+    margin: 0;
   }
   
   .container #signedUpConfirm h3{
     font-weight: bold;
     font-size: 36px;
+    margin: 0;
   }
 
