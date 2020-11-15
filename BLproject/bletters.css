@@ -5,12 +5,13 @@
     
   }
 
-body#home {
-    background: linear-gradient(#f0f7f4 50%, #eae3dd 50%);
-}
+
 
 body{
     background: #f0f7f4 no-repeat center center fixed;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
 }
 
 /* styling for home page */
@@ -22,6 +23,7 @@ body{
     padding: 0;
     margin-left: 0%;
     margin-right: 0%;
+    margin-bottom: 0%;
     border: 0;
 }
 button {
@@ -72,12 +74,24 @@ button {
     line-height: 44px;
 }
 
+.background_wrapper {
+    top: 0;
+    left: 0;
+    margin: 0;
+    margin-bottom: 0%;
+    padding: 0;
+    width: 100%;
+    border: 0;
+}
+
+
+
 #intro {
     display: flex;
     flex-direction: row;
     align-items: center;
     max-width: 80%;
-    margin: 5%;
+    margin-left: 5.5%;
 }
 
 #intro .column {
@@ -108,12 +122,15 @@ button {
 }
 
 #setup {
+    background: #eae3dd 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
+    margin-top: 0%;
     margin-left: 5% auto;
-    margin-bottom: 3%;
+    margin-bottom: 0%;
 }
 
 
@@ -223,7 +240,7 @@ button {
     flex-direction: column;
 }
 
-#back-next{
+#back-next {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -231,7 +248,7 @@ button {
     
 }
 
-#back-next .start{
+#back-next .start {
     color: white;
     background-color: black;
     line-height: 17px;
@@ -258,22 +275,45 @@ button {
     margin-top: 14%;
 }
 
-#select-blogs{
-    margin: auto;
+#select-blogs {
+    
+    /*margin: auto;*/
     width: 500px;
-    padding: 10px; 
+    padding: 20px;
+    padding-left: 45px;
     display: grid;
-    grid-template-columns: 125px 150px 150px;
-    grid-template-rows: 80px auto 80px;
-    column-gap: 25px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-auto-flow: column;
+    column-gap: 20px; 
     border: 3px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: auto;
+    background-color: white;
 }
 
-#select-blogs h2{
+#select-blogs h2 {
     font-weight: bold;
+}
+
+.blogButton {
+    display: grid;
+    align-self: center;
+    justify-self: space-evenly;
+    height: auto;
+    padding: 1%;
+}
+
+.blogButton:hover {
+    color: #009900;
+}
+
+.blogButtonClicked {
+    display: grid;
+    align-self: center;
+    justify-self: space-evenly;
+    height: auto;
+    padding: 1%;
+    background-color: #90c392;
 }
 
 /* Frequency Page Styling*/
