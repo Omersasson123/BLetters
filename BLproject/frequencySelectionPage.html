@@ -15,22 +15,25 @@
             <div class = 'align'>
                 <div id = 'select-frequency'>
                     <h2> Select Frequency</h2>
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                    </div>
-                    <div id = 'select-buttons'>
-                        <button id='day'> 1/day </button>
-                        <button id='week'> 1/week </button>
-                        <button id='month'> 1/month </button>
-                    </div>
-                    <div id = 'back-next'>
-                        <a href='signedUp.html'>
-                            <button class = 'start' > Next </button> 
-                        </a>
-                        <a href='selectBlogsPage.html'>
-                            <button class = 'start' > Back </button> 
-                        </a>
-                    </div>
+                    <form action = "/frequency" method="POST">
+                        <div class="slidecontainer">
+                            <input type="range" name = "freq" min="1" max="30" value="7" class="slider" id="myRange">
+                        </div>
+                    
+                        <div id = 'select-buttons'>
+                            <button id='day'> 1/day </button>
+                            <button id='week'> 1/week </button>
+                            <button id='month'> 1/month </button>
+                        </div>
+                        <div id = 'back-next'>
+                            <a href='signedUp.html'>
+                                <button class = 'start' type = 'submit' > Next </button> 
+                            </a>
+                            <a href='selectBlogsPage.html'>
+                                <button class = 'start' > Back </button> 
+                            </a>
+                        </div>
+                    </form>
                 </div>
             </div>
             <h3 id = 'days'>Every 50 Days</h3>

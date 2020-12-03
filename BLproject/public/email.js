@@ -12,6 +12,7 @@ function nextHandler() {
     let email = document.getElementById('email').value;
     if (emailIsValid(email)) {
         /* store email in backend */
+        
         localStorage.setItem('email', email);
         window.location = 'selectBlogsPage.html';
     } else {
@@ -30,6 +31,13 @@ function onLoad() {
 
 /* Loads previous submission if exists. */
 onLoad();
+
+function signIn() {
+    // Sign into Firebase using popup auth & Google as the identity provider.
+    var provider = new firebase.auth.GoogleAuthProvider();
+    let email = document.getElementById('email').value;
+    firebase.auth().createUserWithEmailAndPassword(email, "hiii345")
+  }
 
 
 const next = document.getElementById('next');
