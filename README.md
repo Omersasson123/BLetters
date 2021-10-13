@@ -1,5 +1,5 @@
 # BLetters
-Front-end of BLetters project, idea: website that would allow users to pick blog archives and send them weekly blog emails. Created Figma for website from scratch and implemneted design and functionality using HTML, CSS, and JavaScript. Added nodemailer and cron jobs to allow sending confirmation email, default is set to run every second. Created front-end so on the backend there are no actual articles to pick from. Folders SendEmailFirebase and blogs can be ignored.
+Front-end of BLetters project, idea: website that would allow users to pick blog archives and send them weekly blog emails. Created Figma for website from scratch and implmented design and functionality using HTML, CSS, and JavaScript. Added nodemailer and cron jobs to allow sending confirmation email, default is set to run every second. Created front-end so on the backend there are no actual articles to pick from. Folders SendEmailFirebase and blogs can be ignored.
 
 ## To run website
   1. Clone repo
