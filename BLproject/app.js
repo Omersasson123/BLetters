@@ -86,7 +86,7 @@ router.get('/frequencySelectionPage.html',function(req,res){
 });
 
 router.get('/signedUp.html',function(req,res){
-    cron.schedule('* */' + frequency * 24 + '* * * *', () => {
+cron.schedule('* * */' + frequency * 24 + '* * *', () => {
         let mailTransporter = nodemailer.createTransport({ 
             service: 'gmail', 
             auth: { 
